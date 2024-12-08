@@ -1,0 +1,37 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Data Viewer</title>
+  <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="images/City_of_Taguig_Seal.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="reference.html">reference</a></li>
+            </ul>
+            <div class="data">
+                <h1>We hear your voices...</h1>
+                <p>Please enter the reference ID</p>
+                <div>
+                    <input type="text" id="header" placeholder="e.g., -A1B2_C3D4">
+                </div>
+                <div class="inputBox" >
+                    <button onclick="fetchData()">Check Progress</button>
+                </div>
+                <div id="data-container"></div>
+            </div>
+        </div>
+    </div>
+  
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+  <script src="referenceID.js"></script>
+</body>
+</html>
